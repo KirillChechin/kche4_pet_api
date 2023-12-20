@@ -1,0 +1,1 @@
+cd C:\Users\Project4\Desktop\fastapi\ && start main.py && start http://127.0.0.1:8000/ && uvicorn main:app --reload
