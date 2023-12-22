@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Coin</title>
+    <link rel="icon" href="{{ url_for('static', path='/fav.png') }}">
+</head>
+<body>
+    <div align="middle">
+    <h1>Coin flip - {{ coin }}</h1>
+    <img src="{{ url_for('static', path=file) }}" alt="{{ coin }}">
+    <br/>
+    <button style="margin-top: 1rem;" onClick="window.location.href=window.location.href">Another flip</button>
+    </div>
+</body>
+</html>
