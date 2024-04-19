@@ -1,34 +1,35 @@
 <html>
 <head>
     <title>Coin</title>
-    <link rel="icon" href="{{ url_for('static', path='/fav.png') }}">
-    <link rel="stylesheet" href="static/my.css">
+    <link rel="icon" href="{{ url_for('static', path='coinflip.gif') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='my.css') }}">
+    <script src="{{ url_for('static', path='my.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div align="middle" style="margin-top: 1rem;" class="column">
+    <div align="middle" class="column" style="background-color:#BEDBED; padding:10px; border-radius:20px; width:20rem;">
         <h1>Coin flip</h1>
+
+        <div  id="one">
         <img src="{{ url_for('static', path=file) }}" alt="{{ coin }}">
         <br/>
         <h2 class="result">{{ coin }}<h2>
-        <button onClick="window.location.href=window.location.href">Another flip</button>
+        </div>
+
+        <button onclick="coinFlip()">Flip</button>
     </div>
-    <div align="middle" style="margin-top: 1rem;" class="column">
+
+    <div align="middle" class="column">
         <h1>Coin flip</h1>
-        <img src="{{ url_for('static', path=file) }}" alt="{{ coin }}">
+        <img src="static/coinflip.gif" alt="{{ coin }}">
         <br/>
-        <h2 class="result">{{ coin }}<h2>
+        <h2 class="result"> - - <h2>
         <button onClick="window.location.href=window.location.href">Another flip</button>
     </div>
-    <div align="middle" style="margin-top: 1rem;" class="column row">
-        <h1>Coin flip</h1>
-        <img src="{{ url_for('static', path=file) }}" alt="{{ coin }}">
-        <br/>
-        <h2 class="result">{{ coin }}<h2>
-        <button onClick="window.location.href=window.location.href">Another flip</button>
-    </div>
+
     <div class="row">
-        <p>lorem ipsum</p>
+        <i class="fa fa-sort-down" aria-hidden="true"></i>
+        <p>?????lorem ipsum</p>
     </div>
 </body>
 </html>

@@ -2,3 +2,5 @@
 __pycache__/*
 __pycache__/main.cpython-310.pyc
 *.pyc
+static/Tails-trans.png
+static/Heads-trans.png
